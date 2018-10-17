@@ -18,5 +18,6 @@ public class DogTester {
         System.out.println(dog2.scold());
 
         System.out.println(dog2.getHappiness());
+
     }
 }

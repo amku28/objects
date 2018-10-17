@@ -5,6 +5,7 @@ public class Dog {
     int tagNumber;
     int happiness;
     boolean beenPet;
+    boolean isHappy;
 
     // Constructor(s)
     public Dog(String name, String breed, int tagNumber, int happiness, boolean beenPet) {
@@ -73,6 +74,7 @@ public class Dog {
         System.out.println("You pet " + this.name);
         this.happiness += 10;
         this.beenPet = true;
+        System.out.println(happy());
         return this.name + " is 10% happier";
     }
 
@@ -81,8 +83,10 @@ public class Dog {
             System.out.println(this.name + " eats");
             this.beenPet = false;
             happiness += 8;
+            System.out.println(happy());
             return this.name + " is now happier";
         } else {
+            System.out.println(happy());
             return this.name + " is not happy enough to eat";
         }
     }
@@ -90,7 +94,17 @@ public class Dog {
     public String scold() {
         System.out.println("You scold " + this.name);
         happiness -= 20;
+        System.out.println(happy());
         return this.name + " is 20% less happy";
+        
+    }
+
+    public boolean happy() {
+        if (happiness >= 50) {
+            return isHappy = true;
+        } else {
+            return isHappy = false;
+        }
     }
 }
 
