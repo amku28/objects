@@ -22,6 +22,12 @@ public class MouseTester {
         if (jerry.runAwaySpeed > 60) {
             System.out.println("That's a motherf*cker faster than sanic!");
         }
+
+        System.out.println(clifford.getHappiness());
+    }
+
+    public String meetsDog() {
+        return "a";
     }
 }
 // When a mouse meets a cat, it feels less safe. When a mouse meets a dog,
