@@ -14,6 +14,11 @@ public class Dog {
         this.tagNumber = tagNumber;
         this.happiness = happiness;
         this.beenPet = beenPet;
+        if (happiness >= 50) {
+            isHappy = true;
+        } else {
+            isHappy = false;
+        }
     }
 
     // Abilities
@@ -96,7 +101,6 @@ public class Dog {
         happiness -= 20;
         System.out.println(happy());
         return this.name + " is 20% less happy";
-        
     }
 
     public boolean happy() {
